@@ -2,6 +2,12 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-export 'data/author.dart';
-export 'data/book.dart';
-export 'data/library.dart';
+import 'book.dart';
+
+class Author {
+  final int id;
+  final String name;
+  final books = <Book>[];
+
+  Author(this.id, this.name);
+}

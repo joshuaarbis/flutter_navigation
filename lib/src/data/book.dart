@@ -2,6 +2,14 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-export 'data/author.dart';
-export 'data/book.dart';
-export 'data/library.dart';
+import 'author.dart';
+
+class Book {
+  final int id;
+  final String title;
+  final Author author;
+  final bool isPopular;
+  final bool isNew;
+
+  Book(this.id, this.title, this.isPopular, this.isNew, this.author);
+}
